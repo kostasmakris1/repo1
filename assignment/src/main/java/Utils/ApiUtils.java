@@ -7,9 +7,9 @@ import static com.jayway.restassured.RestAssured.given;
 
 public class ApiUtils {
 
-    public static String sendHttpGETRequest(String url){
+    public static Response sendHttpGETRequest(String url){
 
         Response res = given().get (url);
-        return res.toString();
+        return res;
     }
 }

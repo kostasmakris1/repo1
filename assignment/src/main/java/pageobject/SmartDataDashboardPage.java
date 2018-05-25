@@ -23,6 +23,10 @@ public class SmartDataDashboardPage implements Locators {
         return driver.findElement(By.cssSelector(SMART_PAGE_DASHBOARD_LABEL)).isDisplayed();
     }
 
+    /**
+     * This method reads and stores data from UI into a Map
+     * @return map
+     */
     public Map<String, String> getTableData(){
         List<WebElement> tableData = driver.findElements(By.tagName(TABLE_DATA_BODY));
 

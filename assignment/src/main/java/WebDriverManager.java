@@ -14,6 +14,9 @@ import java.util.concurrent.TimeUnit;
  */
 public class WebDriverManager {
 
+    /**
+     * This classes is extedned by tests and is used from webdriver initiliazation and closing browser instance
+     */
     protected WebDriver driver;
 
     @Before
