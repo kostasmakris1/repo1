@@ -1,0 +1,4 @@
+models\Rates.class
+BrowserNotFountException.class
+WebDriverManager.class
+models\SmartDataModel.class

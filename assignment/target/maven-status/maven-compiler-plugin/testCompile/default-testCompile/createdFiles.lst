@@ -1,0 +1,7 @@
+MosaicSmartDataTests.class
+pageobject\Locators.class
+pageobject\SmartDataDashboardPage.class
+Utils\ApiUtils.class
+tasks\SmartDataTaskManager.class
+pageobject\LoginPage.class
+Utils\Utils.class
