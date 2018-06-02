@@ -1,12 +1,11 @@
-package kurtgeiger;
+package com.kurtgeiger;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.concurrent.TimeUnit;
-
 import static java.lang.String.valueOf;
 import static java.lang.System.getProperty;
+
 
 public class WebDriverFactory {
 

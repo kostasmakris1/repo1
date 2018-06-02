@@ -1,4 +1,26 @@
 package com.kurtgeiger.pages;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class MensPage {
+
+    @FindBy(css = "div[class='category-title']")
+    private WebElement shopByMenElem;
+
+    @FindBy(id = "product-list")
+    private WebElement productsElem;
+
+    private WebDriver driver;
+
+    public MensPage (WebDriver driver){
+        this.driver = driver;
+        PageFactory.initElements(driver,this);
+    }
+
+    public boolean isMenPageDisplayed(){
+         return shopByMenElem.getText().contains("MEN");
+    }
 }

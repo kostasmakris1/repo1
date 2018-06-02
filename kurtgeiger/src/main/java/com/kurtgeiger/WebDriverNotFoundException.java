@@ -1,4 +1,4 @@
-package kurtgeiger;
+package com.kurtgeiger;
 
 public class WebDriverNotFoundException extends Exception{
 
