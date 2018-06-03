@@ -30,6 +30,9 @@ public class BasketPage {
     @FindBy(css = "span[class='skiplinks_count']")
     private WebElement myBagElem;
 
+    @FindBy(id = "btn-proceed-checkout")
+    private WebElement proceedToCheckoutBtnElem;
+
 
     private WebDriver driver;
     public BasketPage(WebDriver driver) {
@@ -61,6 +64,10 @@ public class BasketPage {
             refresh(driver);
             List<WebElement> sizeList  =  sizesElem.findElements(By.tagName("li"));
             sizeList.get(Utils.randomElementFromList(sizeList)).click();
+    }
+
+    public boolean isProceedToCheckoutBtnDisplayed(){
+        return proceedToCheckoutBtnElem.isDisplayed();
     }
     }
 

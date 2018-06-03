@@ -58,7 +58,7 @@ public class KurtgeigerStepDefs  {
 
     @Then("^product is ready for checkout$")
     public void product_is_ready_for_checkout() {
-
+       Assert.assertTrue(basketPage.isProceedToCheckoutBtnDisplayed());
     }
 
     @After
